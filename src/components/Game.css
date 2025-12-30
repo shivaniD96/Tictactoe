@@ -1,0 +1,103 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background: black;
+    /* Base Black */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, #0052FF 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-info-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: auto;
+}
+
+.connect-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: #0052FF;
+    color: white;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.connect-btn:hover {
+    background: #0040cc;
+    transform: translateY(-1px);
+}
+
+.connect-btn.disconnect {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.connect-btn.disconnect:hover {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff4d4d;
+}
+
+.status-display {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #8a919e;
+}
+
+.status-badge {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.status-badge.connected {
+    background: rgba(0, 82, 255, 0.1);
+    color: #0052FF;
+    border: 1px solid rgba(0, 82, 255, 0.2);
+}
+
+.status-badge.disconnected {
+    background: rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reset-btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #0052FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.reset-btn:hover {
+    background: #0040cc;
+    transform: scale(1.05);
+}
