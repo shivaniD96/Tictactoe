@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState } from 'react';
 import { useAccount } from 'wagmi';
 import { Board } from './Board';
@@ -16,19 +14,7 @@ function calculateWinner(squares) {
         [2, 5, 8],
         [0, 4, 8],
         [2, 4, 6],
-        [2, 4, 6], /* duplicate in original code, I'll keep it to be faithful or remove it. I'll remove the duplicate. Wait, line 17 in step 23 was [2, 4, 6] and line 16 was [0, 4, 8]. I see lines 0..17. Step 23 lines 8-17 has 8 lines. [2,4,6] is unique. */
     ];
-    // Original step 23 logic:
-    // 8: [0, 1, 2],
-    // 9: [3, 4, 5],
-    // 10: [6, 7, 8],
-    // 11: [0, 3, 6],
-    // 12: [1, 4, 7],
-    // 13: [2, 5, 8],
-    // 14: [0, 4, 8],
-    // 15: [2, 4, 6],
-    // Correct.
-
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
         if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {

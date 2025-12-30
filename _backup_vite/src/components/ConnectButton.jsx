@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { useConnect, useAccount, useDisconnect } from 'wagmi';
 
@@ -20,7 +18,7 @@ export function ConnectButton() {
     }
 
     return (
-        <button className="connect-btn" onClick={() => connect({ connector })} type="button">
+        <button className="connect-btn" onClick={() => connect({ connector })}>
             Connect Wallet
         </button>
     );

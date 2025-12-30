@@ -13,6 +13,4 @@ export const config = createConfig({
         [base.id]: http(),
         [baseSepolia.id]: http(),
     },
-    // Server Side Rendering (SSR) support is crucial for Next.js
-    ssr: true,
 });
